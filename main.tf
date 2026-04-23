@@ -131,4 +131,10 @@ module "ec2_instances" {
   }
 }
 
+module "aws-s3-bucket-dt" {
+  source  = "app.terraform.io/policy-as-code-training/aws-s3-bucket-dt/aws"
+  version = "1.0.0"
+  bucket_name = "my-bucket-dt-04232026"
+}
+
 
